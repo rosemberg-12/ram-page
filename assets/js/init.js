@@ -33,52 +33,16 @@
 
 		initialize: function () {
 
-			this.stickyHeader();
-
-			this.SvgPolyfill();
-
-			this.headerNav();
-
-			this.dlNav();
-
-			this.mobileNav();
-
-			this.headerMenuPanel();
-
-			this.headerCart();
-
-			this.headerSearch();
-
-			this.headerTopBar();
-
-			this.headerBlogFilter();
-
-			this.checkoutRedeemPopup();
-
-			this.countDown();
-
-			this.isotope();
-
-			this.slickCarousel();
-
-			this.googleMap();
-
-			this.progressBar();
-
 			this.magnificPopupInit();
 
 			this.horizontalScroll();
 
 			this.socialGlitchEffect();
 
-			this.miscScripts();
-
 		},
 
 		onload: function () {
 			this.preloader();
-
-			this.customCursor();
 		},
 
 		stickyHeader: function () {

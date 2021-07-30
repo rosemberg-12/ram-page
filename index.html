@@ -7,10 +7,10 @@
 	<title>RAM Team</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="eSports Team &amp; Gaming HTML Template">
+	<meta name="description" content="RAM Team &amp; Ark Server">
 	<meta name="author" content="Dan Fisher">
-	<meta name="modified" content="Rosemberg Porras">
-	<meta name="keywords" content="esports team news HTML template">
+	<meta name="modifier" content="Rosemberg Porras">
+	<meta name="keywords" content="ark server gaming">
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -23,7 +23,9 @@
 	<!-- CSS
 	================================================== -->
 	<!-- Vendor CSS -->
-	<link href="assets/vendor/magnific-popup/css/magnific-popup.css" rel="stylesheet">
+
+
+	<link href="assets/vendor/alertifyjs/css/alertify.css" rel="stylesheet">
 
 	<link href="assets/vendor/fontawesome/css/brands.css" rel="stylesheet">
 
@@ -45,7 +47,7 @@
 		
 			<!-- Logo - Image Based -->
 			<div class="header-logo header-logo--img">
-				<a href="index.html"><img src="assets/img/ram-logo1.png" alt="Ram Team"></a>
+				<img src="assets/img/ram-logo1.png" alt="Ram Team">
 			</div>
 			<!-- Logo - Image Based / End -->
 
@@ -58,7 +60,7 @@
 			
 			<div class="site-content__center">
 				<h1 class="text-white landing-title"><span class="subtitle landing-subtitle">RAM TEAM</span>ARK SERVER</h1>
-				<a href="steam://connect/ark.ramteam.co:27015" class="btn btn-primary btn-lg btn--landing"><span>Entrar al servidor</span></a>
+				<a href="steam://connect/ark.ramteam.co:27015" onclick="alertify.alert('RAM Team', 'Si tienes el juego instalado en steam, en unos instantes se abrira automaticamente :)');" class="btn btn-primary btn-lg btn--landing"><span>Entrar al servidor</span></a>
 				<div class="match-score new-content">
 								<div class="match-score__header">
 									Si no puedes entrar por el boton, agrega al servidor como favoritos en tu steam : <span>ark.ramteam.co:27015</span>
@@ -132,16 +134,12 @@
 		</div>
 	</div>
 
-	<!-- The cursor elements -->
-	<div class="df-custom-cursor-wrap">
-		<div id="df-custom-cursor"></div>
-	</div>
-
 	<!-- Javascript Files
 	================================================== -->
 	<!-- Core JS -->
 	<script src="assets/vendor/jquery/jquery.min.js"></script>
 	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
+	<script src="assets/vendor/alertifyjs/alertify.min.js"></script>
 	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/core.js"></script>
 	
@@ -150,23 +148,6 @@
 	<!-- Template JS -->
 	<script src="assets/js/init.js"></script>
 	<script src="assets/js/custom.js"></script>
-	
-	<!-- Duotone SVG color filter -->
-	<svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">
-		<filter id="duotone_base">
-			<feColorMatrix type="matrix" result="grayscale"
-				values="1 0 0 0 0
-								1 0 0 0 0
-								1 0 0 0 0
-								0 0 0 1 0" />
-			<feComponentTransfer color-interpolation-filters="sRGB" result="duotone_base_filter">
-				<feFuncR type="table" tableValues="0.082352941176471 0.419607843137255"></feFuncR>
-				<feFuncG type="table" tableValues="0.090196078431373 0.443137254901961"></feFuncG>
-				<feFuncB type="table" tableValues="0.125490196078431 0.6"></feFuncB>
-				<feFuncA type="table" tableValues="0 1"></feFuncA>
-			</feComponentTransfer>
-		</filter>
-	</svg>
 
 </body>
 
